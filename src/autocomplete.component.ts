@@ -159,8 +159,8 @@ export class AutoCompleteComponent implements ControlValueAccessor {
 
     public handleSelectTap($event, suggestion): boolean {
         this.select(suggestion);
-        $event.srcEvent.stopPropagation();
-        $event.srcEvent.preventDefault();
+        $event.stopPropagation();
+        $event.preventDefault();
         return false;
     }
 
